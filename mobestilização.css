@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    
+   
+}
+
+#cabeçalho{
+    list-style: none;
+    padding: 5px;
+    overflow: hidden;
+    transition:  2s;
+}
+
+nav {
+    background-color: #000000;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(238, 177, 11);
+    margin:0;
+    font-size: 40px;
+}
+
+.menu{
+    color: rgb(238, 177, 11);
+    font-size: 25px;
+    
+}
+a{
+    text-decoration: none;
+}
+.titulo{
+    height: 90px;
+    width: 80px;
+  
+    
+}
+nav,#cabeçalho {
+    display:flex;
+    flex-direction: row;
+}
+
+.hover {
+    padding: 0 20px;
+}
+
+.titulo{
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    transition:-5s;
+    
+  
+}
+
+
+.hover:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+button:focus~ #cabeçalho{
+    height: 500px;
+}
+
+section{
+    color: rgb(0, 0, 0);
+}
+  /*   Desenvolvendo o Site!   */
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   background-image: url("imagem/science-gd8dc9b734_1280.jpg");
+   background-size: cover;
+   background-repeat:no-repeat;
+   background-position:center;
+   text-align:center;
+   height: 60vh;
+   
+    
+}
+
+
+
+  img{
+      width: 50%;
+      height: 50%;
+      margin: 0%;
+  }
+ .noticia{
+  display: flex;
+ 
+  
+ }
+.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    align-items: flex-end;
+    text-align: justify;
+    text-indent: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+h2{
+    margin: 0%;
+    text-align: center;
+    background-color: rgb(238, 177, 11); 
+    font-size: 40px;
+}
+.imagem{
+    display: inline-flex;
+    align-items: center;
+} 
+
+ .imagem img{
+  width: 33.4%;
+ }
+ .texto2{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 20px;
+     text-align: justify;
+     text-indent: 20px;
+     margin: 5px;
+ }
+ footer{
+     text-align: center;
+     display: block;
+     font-size: 20px;
+     background-color: rgb(7, 7, 7); 
+     color: #FFF;
+     height: 100%;
+     list-style: none;
+     
+   
+     
+     
+ }
+ li img{
+    width: 20px;
+    left: 80px;
+    
+    
+  
+    
+ }
+ .li{
+     position: relative;
+    list-style: none;
+    top: 50px;
+     margin: 0;
+     text-align: center;
+     padding: 10px;
+     
+     
+ }
+ figure img{
+     position:relative;
+     width: 100px;
+     height: 80px;
+     bottom:90px;
+     right: 10%;
+    
+ }
+a{
+    text-decoration:none;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    nav,
+    #cabeçalho {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        
+        
+       
+    }
+
+    #cabeçalho {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+     #cabeçalho,.hover,.menu{
+        padding: 6px;
+        font-size: 25px;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+        
+        
+    }
+
+    .titulo {
+        
+        margin: 10px;
+        right: 150px;
+    }
+
+    button {
+        display:flex;
+        
+        
+    }
+
+    .hover,
+    .cabeçalho {
+        width: 100%;
+    }
+   .perfil{
+       height: 60vh;
+       
+      
+   }
+   .noticia{
+       display:block;
+       padding: 40px;
+      text-align: center;     
+   }
+   li img{
+    width: 10px;
+    left: 40px;
+    display: inline;
+    margin-top: 8px;
+ }
+ .li{
+     position: relative;
+     bottom: 5px;
+    list-style: none;
+     
+     
+ }
+ 
+ figure img{
+     position:relative;
+     width: 90px;
+     height: 70px;
+     bottom:90px;
+     right:20%;
+ }
+
+}
